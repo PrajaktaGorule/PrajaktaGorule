@@ -16,8 +16,7 @@ namespace soloLearnproject
                 int shelves = Convert.ToInt32(Console.ReadLine());
 
                 //your code goes here
-                int arrange = drinks / shelves;
-                Console.WriteLine(arrange);
+                Console.WriteLine(drinks / shelves);
                 Console.ReadLine();
 
             }
@@ -25,19 +24,15 @@ namespace soloLearnproject
              * 1. DivideByZeroException => "At least 1 shelf"
              * 2. FormatException => "Please insert an integer"
             */
-            catch (DivideByZeroException e)
+            catch (DivideByZeroException)
             {
                 Console.WriteLine("At least 1 shelf");
                
             }
-            catch (FormatException e)
+            catch (FormatException)
             {
                 Console.WriteLine("Please insert an integer");
                 
-            }
-            finally
-            {
-                Console.ReadLine();
             }
         }
     }
