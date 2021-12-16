@@ -39,11 +39,8 @@ namespace MoreOnClasses
 
         public static DancerPoints operator +(DancerPoints b, DancerPoints c)
         {
-            DancerPoints dp = new DancerPoints(b.name,b.points);
-            DancerPoints dp1 = new DancerPoints(c.name, c.points);
-            dp.name=dp.name+" & "+dp1.name;
-            dp.points = dp.points + dp1.points;
-            return dp;
+           DancerPoints total = new DancerPoints(b.name + " " + "&" + " " + c.name, b.points + c.points);
+            return total;
         }
 
     }
