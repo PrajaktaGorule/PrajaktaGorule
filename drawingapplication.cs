@@ -42,10 +42,10 @@ namespace soloLearnproject
     }
 
     //inherit this class from the class Draw
-    class Brush : IDraw
+    class Brush : Draw
     {
         //implement the StartDraw() method
-        public virtual void StartDraw()
+        public override void StartDraw()
         {
             Console.WriteLine("Using brush");
         }
@@ -53,10 +53,10 @@ namespace soloLearnproject
     }
 
     //inherit this class from the class Draw
-    class Spray : IDraw
+    class Spray : Draw
     {
         //implement the StartDraw() method
-        public virtual void StartDraw()
+        public override void StartDraw()
         {
             Console.WriteLine("Using spray");
         }
