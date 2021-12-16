@@ -23,9 +23,9 @@ namespace soloLearnproject
 
             //your code goes here
 
-            foreach (KeyValuePair<string, int> entry in coffee)
+            foreach (KeyValuePair<string, int> coffeetype in coffee)
             {
-                Console.WriteLine(entry.Key + ": " + (entry.Value - entry.Value * discount / 100));
+                Console.WriteLine(coffeetype.Key + ": " + (coffeetype.Value - coffeetype.Value * discount / 100));
             }
             Console.ReadLine();
         }
